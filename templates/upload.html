@@ -1,0 +1,115 @@
+<!-- upload.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deepfake Detection</title>
+</head>
+<body>
+    <h1>Upload a Video for Deepfake Analysis</h1>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <input type="file" name="video" accept="video/*" required>
+        <button type="submit">Upload and Analyze</button>
+    </form>
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f8f9fa;
+        }
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="mb-4">Deepfake Detection</h1>
+        <p class="lead">Upload a video to analyze its authenticity.</p>
+        <form action="/" method="POST" enctype="multipart/form-data" class="my-4">
+            <div class="mb-3">
+                <input type="file" class="form-control" name="video" accept="video/*" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Upload and Analyze</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('https://source.unsplash.com/1600x900/?cyber,tech') center/cover;
+            color: #fff;
+        }
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .btn-lg {
+            transition: transform 0.3s ease;
+        }
+        .btn-lg:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="mb-3"><i class="fas fa-video"></i> Deepfake Detection</h1>
+        <p class="lead mb-4">Upload a video and let our system detect if it’s genuine or fake.</p>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+                <input type="file" class="form-control form-control-lg" name="video" accept="video/*" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg mt-3"><i class="fas fa-upload"></i> Upload & Analyze</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
